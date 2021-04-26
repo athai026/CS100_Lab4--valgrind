@@ -8,12 +8,12 @@ void foo(int x)
 int zzzz = 0; // dummy variable
 int main()
 {
-    int x;
+    int x = 100;
     int r=4;
     int y=x+r;
-    if(x) zzzz++; // uninitialized error reported here
-    if(r) zzzz++;
-    if(y) zzzz++; // uninitialized error reported here
+//    if(x) zzzz++; // uninitialized error reported here
+//    if(r) zzzz++;
+//    if(y) zzzz++; // uninitialized error reported here
 
     foo(y);
     
