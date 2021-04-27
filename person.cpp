@@ -53,6 +53,7 @@ void Person::printLineage(char dir, int level){
             father->printLineage(dir, level + 1);
         }
     }
+    delete[] temp;
 }
 
 /* helper function to compute the lineage
@@ -81,5 +82,7 @@ void expand(Person ***t, int *MAX){
   Person **temp = new Person*[2 * *MAX];
   memcpy(temp, *t, *MAX * sizeof(**t));
   *MAX *= 2;
+  delete[] *t;
   *t = temp;
+  
 }
