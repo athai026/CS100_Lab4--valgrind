@@ -53,6 +53,10 @@ void Person::printLineage(char dir, int level){
             father->printLineage(dir, level + 1);
         }
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 874efa802c52372c37e349cfe36f3d3e9f2b5c12
     delete[] temp;
 }
 
